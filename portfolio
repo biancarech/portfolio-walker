@@ -64,6 +64,8 @@
         /* 📸 FOTO */
 
         .foto {
+
+            <img src="https://drive.google.com/file/d/13BWusIrH1AGeV8d351Bxp61p3YDsg-PT/view?usp=sharing">
             width: 130px;
             height: 130px;
 
