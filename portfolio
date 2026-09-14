@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -83,4 +82,94 @@
         .instagram {
             display: block;
             text-align: center;
-            background: linear-gradient(135deg, #d86
+            background: linear-gradient(135deg, #d86fa2, #9b68c4);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .instagram:hover {
+            transform: scale(1.03);
+        }
+
+        .frase {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #8e5ab7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #76556f;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- FOTO -->
+        <img 
+            src="https://drive.google.com/uc?export=view&id=13BWusIrH1AGeV8d351Bxp61p3YDsg-PT"
+            alt="Foto de Bianca Carolina"
+            class="foto"
+        >
+
+        <h1>Bianca Carolina ✨</h1>
+        <p>Meu cantinho, meus projetos e um pouquinho sobre mim 💗</p>
+
+    </header>
+
+    <main>
+
+        <div class="card">
+            <h2>🌷 Sobre mim</h2>
+
+            <p>
+                Oi! Eu sou a Bianca Carolina. 
+                Sou estudante e gosto de criatividade, beleza,
+                tecnologia e de transformar minhas ideias em projetos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎨 Projetos</h2>
+
+            <p>
+                Aqui vou colocar alguns dos projetos que estou
+                desenvolvendo, mostrando um pouco do que estou
+                aprendendo e criando.
+            </p>
+        </div>
+
+        <div class="frase">
+            ✨ Criando, aprendendo e evoluindo um pouquinho todos os dias. ✨
+        </div>
+
+        <a 
+            href="https://www.instagram.com/biac.lr/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="instagram"
+        >
+            📷 Instagram • @biac.lr
+        </a>
+
+    </main>
+
+    <footer>
+        © 2026 Bianca Carolina 💕
+    </footer>
+
+</body>
+
+</html>
