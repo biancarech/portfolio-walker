@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Mim | Bianca Carolina</title>
+    <title>Sobre mim | Bianca Carolina</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -21,90 +22,185 @@
             color: #4a3045;
         }
 
-        header {
+        /* TOPO */
+
+        .topo-unico {
             background: linear-gradient(135deg, #c85a8e, #8e5ab7);
+            width: 100%;
+            padding: 45px 20px;
             color: white;
             text-align: center;
-            padding: 35px 20px;
             border-radius: 0 0 35px 35px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
 
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 8px;
+        .topo-unico h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
-        header p {
+        .topo-unico p {
             font-size: 16px;
         }
 
-        main {
-            max-width: 750px;
+        /* CONTEÚDO */
+
+        .conteudo {
+            max-width: 700px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.92);
-            padding: 30px;
-            margin-bottom: 22px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            margin-bottom: 20px;
             border-radius: 25px;
             box-shadow: 0 8px 20px rgba(120, 70, 120, 0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(120, 70, 120, 0.25);
         }
 
         .card h2 {
             color: #a54882;
-            margin-bottom: 15px;
-            font-size: 23px;
+            margin-bottom: 12px;
         }
 
         .card p {
             line-height: 1.7;
-            font-size: 16px;
+            font-size: 17px;
         }
 
-        .detalhes {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
+        /* HOBBY */
 
-        .detalhe {
-            background: #fff0f7;
-            padding: 18px;
-            border-radius: 18px;
+        .hobby {
             text-align: center;
+            font-size: 20px;
         }
 
-        .detalhe h3 {
-            color: #9b68a9;
-            margin-bottom: 8px;
-        }
-
-        .detalhe p {
-            font-size: 14px;
-        }
+        /* BOTÃO VOLTAR */
 
         .voltar {
             display: block;
-            text-align: center;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+
             background: linear-gradient(135deg, #d86fa2, #9b68c4);
             color: white;
+
             text-decoration: none;
-            padding: 16px;
-            border-radius: 20px;
             font-weight: bold;
-            margin-top: 25px;
+
+            border-radius: 20px;
+
             transition: 0.3s;
         }
 
         .voltar:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
+
+        /* RODAPÉ */
 
         footer {
             text-align: center;
             padding: 25px;
             color: #76556f;
-            font-size:
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- TOPO -->
+
+    <header class="topo-unico">
+
+        <h1>🌷 Sobre mim</h1>
+
+        <p>Um pouquinho sobre quem eu sou ✨</p>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+        <div class="card">
+
+            <h2>👋 Olá!</h2>
+
+            <p>
+                Olá! Meu nome é Bianca Carolina de Lima Rech.
+                Tenho 15 anos e sou estudante.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>💻 Sobre mim</h2>
+
+            <p>
+                Sou a Bia e atualmente estudo programação.
+                Estou aprendendo cada vez mais sobre tecnologia
+                e desenvolvimento de projetos.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🎧 Meus hobbies</h2>
+
+            <p class="hobby">
+                Um dos meus hobbies favoritos é escutar música. 🎶
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>✨ Um pouco mais sobre mim</h2>
+
+            <p>
+                Gosto de aprender coisas novas, colocar minhas ideias
+                em prática e desenvolver projetos criativos.
+                Este site faz parte do meu aprendizado em programação.
+            </p>
+
+        </div>
+
+
+        <!-- VOLTAR -->
+
+        <a class="voltar" href="index.html">
+            ← Voltar para o início
+        </a>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        © 2026 Bianca Carolina 💕
+        
+    </footer>
+
+</body>
+
+</html>
