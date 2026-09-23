@@ -17,92 +17,98 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ffe4f1, #e9ddff);
+            background: linear-gradient(135deg, #fce4ec, #eee3ff);
             min-height: 100vh;
-            color: #070507;
+            color: #2b2027;
         }
 
         /* TOPO */
 
-        .topo-unico {
-            background: linear-gradient(135deg, #3b0404, #ca0404);
-            width: 100%;
-            padding: 45px 20px;
+        .topo {
+            background: linear-gradient(135deg, #3b0404, #a60000);
             color: white;
             text-align: center;
-            border-radius: 0 0 5px 5px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            padding: 45px 20px 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .topo-unico h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .foto {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .topo-unico p {
-            font-size: 16px;
+        .topo h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .topo p {
+            font-size: 17px;
+            opacity: 0.9;
         }
 
         /* CONTEÚDO */
 
         .conteudo {
-            max-width: 700px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
-            background-color: rgba(215, 209, 162, 0.9);
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 25px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(120, 70, 120, 0.25);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin-bottom: 22px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
 
         .card h2 {
-            color: #4c3543;
-            margin-bottom: 12px;
+            color: #720000;
+            font-size: 23px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .card h2:first-child {
+            margin-top: 0;
         }
 
         .card p {
             line-height: 1.7;
-            font-size: 17px;
+            font-size: 16px;
+            margin-bottom: 8px;
         }
 
-        /* HOBBY */
+        /* LISTA */
 
-        .hobby {
-            text-align: center;
-            font-size: 20px;
+        .interesses {
+            list-style: none;
+            margin-top: 10px;
         }
 
-        /* BOTÃO VOLTAR */
+        .interesses li {
+            background: #f8e8ee;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border-left: 4px solid #8f0000;
+        }
 
-        .voltar {
-            display: block;
-            width: fit-content;
-            margin: 30px auto;
-            padding: 12px 25px;
+        /* DESTAQUE */
 
-            background: linear-gradient(135deg, #370505, #c46868);
+        .objetivo {
+            background: linear-gradient(135deg, #4b0505, #9d1111);
             color: white;
-
-            text-decoration: none;
-            font-weight: bold;
-
-            border-radius: 20px;
-
-            transition: 0.3s;
         }
 
-        .voltar:hover {
-            transform: scale(1.05);
+        .objetivo h2 {
+            color: white;
         }
 
         /* RODAPÉ */
@@ -110,8 +116,31 @@
         footer {
             text-align: center;
             padding: 25px;
-            color: #7f6b7b;
+            color: #6d5965;
             font-size: 14px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 600px) {
+
+            .topo {
+                padding: 35px 15px 40px;
+            }
+
+            .topo h1 {
+                font-size: 32px;
+            }
+
+            .foto {
+                width: 120px;
+                height: 120px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
         }
 
     </style>
@@ -122,10 +151,14 @@
 
     <!-- TOPO -->
 
-    <header class="topo-unico">
+    <header class="topo">
 
-        <h1>Bianca</h1>
+        <!-- COLOQUE SUA FOTO AQUI -->
+        <img src="foto.jpg" alt="Foto de Bianca Carolina" class="foto">
 
+        <h1>Bianca Carolina</h1>
+
+        <p>Estudante de Desenvolvimento de Sistemas</p>
 
     </header>
 
@@ -134,31 +167,59 @@
 
     <main class="conteudo">
 
-        <div class="card">
+        <section class="card">
 
             <h2>Sobre mim</h2>
 
             <p>
-                meu nome é bianca carolina!
-             atualmente estou no 2° do ensino medio, cursando desenvolvimento de sistema no Elias Abrahão CCM.
-             estou começando como nail art, sou boa com trabalhos manuais e gosto de aprender na pratica.
+                Meu nome é Bianca Carolina. Atualmente estou no 2º ano
+                do Ensino Médio, cursando Desenvolvimento de Sistemas
+                no Elias Abrahão CCM.
             </p>
-              
-            <h2>idade</h2>
-            <p>atualmente tenho 16 anos</p>
-            
+
+            <p>
+                Tenho facilidade com trabalhos manuais, gosto de aprender
+                na prática e estou sempre buscando desenvolver novas
+                habilidades e conhecer novas áreas.
+            </p>
+
+
+            <h2>Idade</h2>
+
+            <p>
+                Atualmente tenho 16 anos.
+            </p>
+
+
             <h2>Áreas de interesse</h2>
+
+            <ul class="interesses">
+
+                <li>Pediatria</li>
+
+                <li>Marketing e Social Media</li>
+
+                <li>Empreendedorismo</li>
+
+                <li>Perícia Criminal</li>
+
+            </ul>
+
+        </section>
+
+
+        <section class="card objetivo">
+
+            <h2>Meus objetivos</h2>
+
             <p>
-               ° Pediatria
-               ° Marketing/social media
-               ° Empreendedorismo 
-               ° pericia criminal
+                Pretendo cursar uma faculdade, construir uma carreira
+                de sucesso, conquistar meus objetivos pessoais e
+                profissionais e conhecer diferentes lugares ao redor
+                do mundo.
             </p>
-            <h2>Objetivos</h2>
-            <p>
-             cursar uma faculdade, conquistar tudo que eu quero e viajar o mundo         
-             </p>
-        </div>
+
+        </section>
 
     </main>
 
@@ -167,8 +228,8 @@
 
     <footer>
 
-        © 2026 Bianca Carolina 
-        
+        © 2026 Bianca Carolina
+
     </footer>
 
 </body>
