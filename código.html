@@ -1,36 +1,269 @@
-<section class="card">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <h2>Meus Projetos</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="projetos">
+    <title>Sobre mim | Bianca Carolina</title>
 
-        <div class="projeto">
-            <h3>🌐 Portfólio Pessoal</h3>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #eee3ff);
+            min-height: 100vh;
+            color: #2b2027;
+        }
+
+        /* TOPO */
+
+        .topo {
+            background: linear-gradient(135deg, #3b0404, #a60000);
+            color: white;
+            text-align: center;
+            padding: 45px 20px 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .foto {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .topo h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .topo p {
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        /* CONTEÚDO */
+
+        .conteudo {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin-bottom: 22px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h2 {
+            color: #720000;
+            font-size: 23px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .card h2:first-child {
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        /* LISTA */
+
+        .interesses {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .interesses li {
+            background: #f8e8ee;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border-left: 4px solid #8f0000;
+        }
+
+        /* DESTAQUE */
+
+        .objetivo {
+            background: linear-gradient(135deg, #4b0505, #9d1111);
+            color: white;
+        }
+
+        .objetivo h2 {
+            color: white;
+        }
+
+        /* BOTÃO GITHUB */
+
+        .botao-projetos {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #3b0404, #a60000);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .botao-projetos:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6d5965;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 600px) {
+
+            .topo {
+                padding: 35px 15px 40px;
+            }
+
+            .topo h1 {
+                font-size: 32px;
+            }
+
+            .foto {
+                width: 120px;
+                height: 120px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- TOPO -->
+
+    <header class="topo">
+
+        <!-- COLOQUE SUA FOTO AQUI -->
+        <img src="foto.jpg" alt="Foto de Bianca Carolina" class="foto">
+
+        <h1>Bianca Carolina</h1>
+
+        <p>Estudante de Desenvolvimento de Sistemas</p>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+        <section class="card">
+
+            <h2>Sobre mim</h2>
+
             <p>
-                Desenvolvimento de um site pessoal utilizando HTML e CSS,
-                apresentando minhas informações, interesses e objetivos.
+                Meu nome é Bianca Carolina. Atualmente estou no 2º ano
+                do Ensino Médio, cursando Desenvolvimento de Sistemas
+                no Elias Abrahão CCM.
             </p>
-            <a href="#" class="botao">Ver projeto</a>
-        </div>
 
-        <div class="projeto">
-            <h3>💻 Projeto Escolar</h3>
             <p>
-                Desenvolvimento de atividades e projetos durante o curso
-                de Desenvolvimento de Sistemas.
+                Tenho facilidade com trabalhos manuais, gosto de aprender
+                na prática e estou sempre buscando desenvolver novas
+                habilidades e conhecer novas áreas.
             </p>
-            <a href="#" class="botao">Ver projeto</a>
-        </div>
 
-        <div class="projeto">
-            <h3>🎨 Projeto Criativo</h3>
+
+            <h2>Idade</h2>
+
             <p>
-                Trabalhos criativos e práticos, aplicando habilidades
-                manuais e desenvolvimento de ideias.
+                Atualmente tenho 16 anos.
             </p>
-            <a href="#" class="botao">Ver projeto</a>
-        </div>
 
-    </div>
 
-</section>
+            <h2>Áreas de interesse</h2>
+
+            <ul class="interesses">
+
+                <li>Pediatria</li>
+
+                <li>Marketing e Social Media</li>
+
+                <li>Empreendedorismo</li>
+
+                <li>Perícia Criminal</li>
+
+            </ul>
+
+        </section>
+
+
+        <section class="card objetivo">
+
+            <h2>Meus objetivos</h2>
+
+            <p>
+                Pretendo cursar uma faculdade, construir uma carreira
+                de sucesso, conquistar meus objetivos pessoais e
+                profissionais e conhecer diferentes lugares ao redor
+                do mundo.
+            </p>
+
+        </section>
+
+
+        <!-- BOTÃO PARA O GITHUB -->
+
+        <a href="https://github.com/SEU-USUARIO"
+           target="_blank"
+           class="botao-projetos">
+
+            Alguns projetos
+
+        </a>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        © 2026 Bianca Carolina
+
+    </footer>
+
+</body>
+
+</html>
